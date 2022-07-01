@@ -8,20 +8,6 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Sporty Shoes</title>
-<script type="text/javascript">
-	function filterBrand(value) {
-		window.location.replace("placeOrder.jsp?selectedBrand=" + value);
-	}
-	function filterName(value) 
-		window.location.replace("placeOrder.jsp?selectedName=" + value);
-	}
-	function filterSize(value) 
-		window.location.replace("placeOrder.jsp?selectedSize=" + value);
-	}
-	function filterSize(value) 
-		window.location.replace("placeOrder.jsp?orderedQty=" + value);
-	}
-</script>
 </head>
 <body>
 	<%

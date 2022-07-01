@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Sporty Shoes</title>
 <style>
 table.center {
 	margin-left: auto;

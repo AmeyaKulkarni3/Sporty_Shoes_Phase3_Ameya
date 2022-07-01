@@ -19,7 +19,7 @@
 			Category Name<br> <input type="text" name="catName" value="<%=name%>" readonly="readonly"><br><br>
 			<br> <input type="submit" value="Delete">
 		</form>
-		<br> <a href="categoryHome.jsp">Back</a>
+		<br> <a href="/category">Back</a>
 	</div>
 
 </body>

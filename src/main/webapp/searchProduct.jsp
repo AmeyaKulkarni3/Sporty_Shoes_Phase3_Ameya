@@ -6,12 +6,12 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Sporty Shoes</title>
 </head>
 <body>
 	<%@ include file="header.jsp"%>
 	<div style="text-align: center">
-	<h2>Purchase</h2><br>
+	<h2>Search Product</h2><br>
 		<%
 		List<CategoryDto> categories = (List<CategoryDto>) session.getAttribute("cats");
 		%>
@@ -27,7 +27,7 @@
 			</select><br> <br> <input type="submit" value="Get Products">
 		</form>
 		<br><br>
-		<a href="productHome.jsp">Back</a>
+		<a href="/product">Back</a>
 	</div>
 </body>
 </html>

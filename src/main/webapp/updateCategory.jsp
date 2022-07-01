@@ -22,7 +22,7 @@
 			<br> <br> <input type="submit" value="Update">
 		</form>
 		<br>
-		<a href="categoryHome.jsp">Back</a>
+		<a href="/category">Back</a>
 	</div>
 
 </body>

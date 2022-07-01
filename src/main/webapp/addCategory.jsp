@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Sporty Shoes</title>
 </head>
 <body>
 	<%@ include file="header.jsp"%>
@@ -16,7 +16,7 @@
 			<br>
 			<input type="submit" value="Add"><br><br>
 		</form>
-		<a href="categoryHome.jsp">Back</a>
+		<a href="/category">Back</a>
 	</div>
 
 </body>

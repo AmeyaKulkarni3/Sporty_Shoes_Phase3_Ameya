@@ -104,9 +104,10 @@ public class UserServiceImpl implements UserService {
 				}
 				returnValue.setRoles(userRoles);
 			}
-		} else {
-			throw new NoSuchUserException(env.getProperty(ExceptionConstants.USER_NOT_FOUND.toString()));
-		}
+			else {
+				throw new NoSuchUserException(env.getProperty(ExceptionConstants.USER_NOT_FOUND.toString()));
+			}
+		} 
 		return returnValue;
 	}
 
