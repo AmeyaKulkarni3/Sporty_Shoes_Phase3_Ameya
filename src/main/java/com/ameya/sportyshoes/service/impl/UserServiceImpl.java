@@ -191,4 +191,24 @@ public class UserServiceImpl implements UserService {
 		return returnValue;
 	}
 
+	@Override
+	public void updateUserByUser(UserDto dto) throws NoSuchUserException {
+		User user = userRepository.findById(dto.getId()).orElseThrow(
+				() -> new NoSuchUserException(env.getProperty(ExceptionConstants.USER_NOT_FOUND.toString())));
+		if (!user.getFirstName().equals(dto.getFirstName())) {
+			user.setFirstName(dto.getFirstName());
+		}
+		if (!user.getLastName().equals(dto.getLastName())) {
+			user.setLastName(dto.getLastName());
+		}
+		if (!user.getEmail().equals(dto.getEmail())) {
+			user.setEmail(dto.getEmail());
+		}
+		if (user.getBalance() != dto.getBalance()) {
+			user.setBalance(dto.getBalance());
+		}
+		userRepository.save(user);
+		
+	}
+
 }

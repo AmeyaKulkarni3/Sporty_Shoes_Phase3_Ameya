@@ -23,7 +23,7 @@
 	<h1>Welcome <%=user.getFirstName()%> !</h1>
 	<br>
 		<a href="<spring:url value='/shop-category'/>"> Shop For Shoes</a><br><br>
-		<a href="updateUser.jsp">Update Details</a><br><br>
+		<a href="updateUserByUser.jsp">Update Details</a><br><br>
 		<form action="logout">
 			<input type="submit" value="Logout">
 		</form>

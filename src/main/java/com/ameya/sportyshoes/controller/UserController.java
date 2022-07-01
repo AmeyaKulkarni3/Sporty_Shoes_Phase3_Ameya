@@ -130,5 +130,19 @@ public class UserController {
 		mv.setViewName("userList.jsp");
 		return mv;
 	}
+	
+	@RequestMapping("/update-user-by-user")
+	public ModelAndView updateUserByUser(HttpServletRequest req, HttpServletResponse res) throws NoSuchUserException {
+		UserDto dto = new UserDto();
+		dto.setId(Integer.parseInt(req.getParameter("id")));
+		dto.setFirstName(req.getParameter("fname"));
+		dto.setLastName(req.getParameter("lname"));
+		dto.setEmail(req.getParameter("email"));
+		dto.setBalance(Double.parseDouble(req.getParameter("balance")));
+		ModelAndView mv = new ModelAndView();
+		userService.updateUserByUser(dto);
+		mv.setViewName("userMenu.jsp");
+		return mv;
+	}
 
 }

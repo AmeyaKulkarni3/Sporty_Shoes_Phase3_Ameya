@@ -21,5 +21,7 @@ public interface UserService {
 	public void deleteUser(int id) throws NoSuchUserException;
 
 	public List<UserDto> getUserByName(String name);
+	
+	public void updateUserByUser(UserDto dto) throws NoSuchUserException;
 
 }
