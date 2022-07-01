@@ -20,7 +20,7 @@ table.center {
 	<div style="text-align: center">
 		<%
 		List<OrderDto> orders = (List<OrderDto>) request.getAttribute("orders");
-		if(orders == null){%>
+		if(orders == null || orders.size() == 0){%>
 			<h3>No Orders exist!</h3>
 		<%} else {
 		String category = orders.get(0).getProducts().get(0).getCategory();
