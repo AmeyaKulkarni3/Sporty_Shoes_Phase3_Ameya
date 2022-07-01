@@ -21,8 +21,9 @@
 					<option value="<%=cat.getName()%>"><%=cat.getName()%></option>
 				<%} %>
 			</select>
-			<br> <input type="submit" value="Generate Report">
+			<br><br> <input type="submit" value="Generate Report">
 		</form>
+		<br><br>
 		<a href="ordersHome.jsp">Back</a>
 	</div>
 

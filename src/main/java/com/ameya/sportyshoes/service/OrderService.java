@@ -20,4 +20,6 @@ public interface OrderService {
 
 	public List<OrderDto> getOrdersByDate(LocalDate date);
 
+	public List<OrderDto> getOrdersByCategory(String category);
+
 }

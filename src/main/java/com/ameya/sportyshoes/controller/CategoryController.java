@@ -73,6 +73,19 @@ public class CategoryController {
 		mv.setViewName("selectCategory.jsp");
 		return mv;
 	}
+	
+	@RequestMapping("/get-categories-for-orders")
+	public ModelAndView getCategoriesForOrders(HttpServletRequest req, HttpServletResponse res) {
+		
+		List<CategoryDto> dtos = categoryService.getAllCategories();
+		ModelAndView mv = new ModelAndView();
+		HttpSession session = req.getSession();
+		session.setAttribute("cats", dtos);
+		mv.setViewName("selectPurchaseReportCategory.jsp");
+		return mv;
+	}
+		
+	
 
 
 }
